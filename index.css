@@ -1,0 +1,358 @@
+body {
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.btn{
+    padding:12px 30px !important;
+    font-size:16px !important;
+    font-weight:400 !important;
+}
+/*.navbar {*/
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background color and text color */
+/*}*/
+/*.navbar.bg-light {*/
+/*   background: linear-gradient(to right, #ffffff, #ffffffd9) !important;*/
+    color: black !important; /* Set text color to black */
+/*}*/
+.bg-primary{
+    background-color: #0b4a99 !important;
+}
+.btn-primary{
+    background-color: #0b4a99 !important;
+}
+.btn-primary1{
+    background-color: #0b4a99 !important;
+    color:white !important;
+}
+.btn-primary:hover{
+    background-color: aliceblue !important;
+    color: black !important;
+    border: 1px solid #0b4a99 !important;
+    animation: 2s ease-in;
+}
+.btn-primary1:hover{
+    background-color: white !important;
+    color: #0b4a99 !important;
+    border: 1px solid #0b4a99 !important;
+}
+.btn-blue{
+    background-color:#b4a99 !important;
+}
+
+
+
+
+/* ============ mobile view ============ */
+/*@media(max-width: 991px){*/
+/*  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{*/
+/*    overflow-y: auto;*/
+/*      max-height: 90vh;*/
+/*      margin-top:10px;*/
+/*  }*/
+/*}*/
+/* ============ mobile view .end// ============ */
+#linksContainer  {
+    display: none;
+    position: relative;
+    padding:  10px;
+   bottom: 20px;
+    padding: 10px;
+    z-index: 1;
+   
+}
+/* hover links for Role */
+a{
+    text-decoration: none !important;
+    color: black;
+}
+ .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+} 
+.role-bg{
+    /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #9293730a, #818ecf0a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f6ff7314, #1c3ff010); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.industry-bg{
+    /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #647f891a, #cf81be1d);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #647f891a, #cf81be1d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.dropdown-menu {
+    animation: fadeIn 0.3s ease-in-out forwards; /* Animation for default dropdowns */
+    display: none; /* Hide initially */
+}
+
+/* Animation for Roles dropdown */
+#linksContainerRoles .dropdown-menu,
+#linksContainerIndustry .dropdown-menu {
+    animation: fadeIn 0.3s ease-in-out forwards; /* Animation for specific dropdowns */
+    display: none; /* Hide initially */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+        opacity: 1; /* Fade in to opacity 1 */
+    }
+}
+/* hero section bg starts here */
+.heroBg{
+  /* background: linear-gradient(#0b4b99b5, #0b4b995e), url(src/images/banner3.jpg); */
+   background: linear-gradient(#000000a3, #00000000), url(src/images/banner3.jpg);
+    width: 100%;
+    height: 95vh;
+    background-repeat: no-repeat;
+    /*margin-top: 72px;*/
+    background-size: cover;
+    background-position: top;
+    /* background-attachment: fixed; */
+}
+.areah1{
+    position: relative;
+    top: 50px;
+}
+.primary-heading{
+    font-size: 3.8rem !important;
+    font-weight: bold !important;
+}
+.heroContext{
+    position: relative;
+    top: 200px !important;
+}
+.primary-heading {
+    overflow: hidden; /* Hide overflowing content */
+}
+
+/* Keyframes for typing animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Apply typing animation to each line */
+.line-animation {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: width 2s linear; /* Smooth transition for typing animation */
+    width: 0; /* Start with zero width */
+}
+.btn-light{
+   
+    color: #0b4a99 !important;
+}
+.btn-light:hover{
+    background-color: #0b4a99 !important;
+    color: white !important;
+}
+.heroBtn{
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); } /* Start with opacity 0 and slightly below its position */
+    to { opacity: 1; transform: translateY(0); } /* Fade in to opacity 1 and original position */
+}
+.bgSec{
+    background-color: #538cb75c !important;
+}
+.sideImg1{
+    border-top-right-radius: 50px !important;
+    border-bottom-right-radius: 50px !important;
+    border-bottom-left-radius: 50px !important;
+}
+.sideImg2{
+    border-radius: 50px;
+}
+.subTitle {
+    background: linear-gradient(to right, #d175bdaf, #1c3ff0be);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* fallback for browsers that don't support background-clip */
+}
+.solCard1{
+   background: linear-gradient(to right, #2e559ab5, #538cb7eb) !important; /* Set background color to white */
+   position:relative !important;
+
+}
+.solCard0 {
+    background: linear-gradient(to right, #00000091, #0000003b) !important;
+    position: relative !important;
+}
+.paraSmall{
+    font-size: 13px !important;
+}
+.solCard2{
+    background: linear-gradient(to right, #1283b55c, #9bacda5c) !important;/* Set background color to white */
+
+}
+.solCard3{
+    background: linear-gradient(to right, #9bacda5c, #1283b55c) !important; /* Set background color to white */
+
+}
+.solCard4{
+    background: linear-gradient(to right, #1283b55c, #9bacda5c) !important; /* Set background color to white */
+
+}
+.solCard5{
+    background: linear-gradient(to right, #ff73731b, #f0f01c0f) !important; /* Set background color to white */
+
+}
+.solCard6{
+    background: linear-gradient(to right, #ff738330, #9e487a0f) !important; /* Set background color to white */
+
+}
+.bgSec2{
+    background-color: #f4959511 !important;
+    
+}
+.bgContact{
+    background: linear-gradient(to right, #73ffa6d6, #1c9bf0d2), url('https://templatekit.jegtheme.com/disrupt/wp-content/uploads/sites/17/2020/11/maps.png');
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.seccondaryHeading{
+    font-size: 2.5rem !important;
+}
+.btnGRa{
+    background: linear-gradient(to right, #737fffe4, #7c99b9be) !important; /* Set background color to white */
+
+}
+.btnGRa:hover{
+    background: linear-gradient(to right, #ff738330, #9e487a0f) !important; /* Set background color to white */
+    color: black !important;
+}
+.radicalImg{
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: 1.4s !important;
+}
+.bgBanner{
+    background: linear-gradient(to right, #ff738330, #9e487a0f),url('https://sreemansolutions.com/assests/images/contact-us-banner.jpg');
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.solBanner{
+    background: linear-gradient(to right, #ff738330, #9e487a0f),url('https://sreemansolutions.com/assests/images/contact-us-banner.jpg');
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.secBgSec{
+    background: linear-gradient(to right, #00000063, #00000063) !important;
+}
+  .colBg {
+            background-image:url('src/images/lady.avif'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            height: 480px !important;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+           
+            z-index: -1;
+        }
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+        .p-5 {
+            padding: 3rem !important;
+        }
+        @media (max-width: 768px) {
+            .p-5 {
+                padding: 2rem !important; /* Reduce padding for mobile view */
+            }
+        }
+        @media (max-width: 576px) {
+            .p-5 {
+                padding: 1rem !important; /* Further reduce padding for smaller screens */
+            }
+        }
+.colBgOverView{
+    background: url('https://images.unsplash.com/photo-1590650423710-ffa6e7f63440?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.drpDownMenu{
+    border: none !important;
+    border-radius: 10px !important;
+}
+.solutions{
+   
+   background:linear-gradient(#0b4b9939, #0b4b9939),  url('https://21158594.fs1.hubspotusercontent-na1.net/hub/21158594/hubfs/woman-working-compressed.png?width=1350&height=900&name=woman-working-compressed.png');
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-top: 22px;
+    background-position:center !important;
+    background-size: cover;
+     background-attachment: scroll;
+    
+}
+.solution-s{
+    background:linear-gradient(#0b4b9939, #0b4b9939),  url('https://21158594.fs1.hubspotusercontent-na1.net/hub/21158594/hubfs/woman-working-compressed.png?width=1350&height=900&name=woman-working-compressed.png');
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    margin-top: 22px;
+    background-position:center !important;
+    background-size: cover;
+     background-attachment: scroll;
+}
+.solBg{
+    background: linear-gradient(to right, #f6ff737b, #1c3ff092);
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.overViewBg{
+    background:  url('https://images.unsplash.com/photo-1590650423710-ffa6e7f63440?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.solCardradius{
+       background: linear-gradient(to right, #2e559ab5, #538cb7eb) !important; /* Set background color to white */
+
+}
+.text-primary{
+    color:#254791 !important;
+}
+
+
+
+
+
